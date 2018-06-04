@@ -1,0 +1,39 @@
+{
+  "name": "nuxt-edge-vuex",
+  "version": "1.0.0",
+  "description": "my first nuxt 2 project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build ",
+    "start": "nuxt start ",
+    "s": "nuxt build && nuxt start",
+    "test": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeymanson/nuxt-edge-vuex.git"
+  },
+  "author": "dartchuk sergey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergeymanson/nuxt-edge-vuex/issues"
+  },
+  "homepage": "https://github.com/sergeymanson/nuxt-edge-vuex#readme",
+  "dependencies": {
+    "nuxt-edge": "^2.0.0-25468832.6578bd7"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "babel-eslint": "^8.2.1",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-plugin-vue": "^4.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
+}
