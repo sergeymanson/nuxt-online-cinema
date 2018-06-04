@@ -1,0 +1,26 @@
+{
+  "name": "nuxt-edge-vuex",
+  "version": "1.0.0",
+  "description": "my first nuxt 2 project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build ",
+    "start": "nuxt start ",
+    "s": "nuxt build && nuxt start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeymanson/nuxt-edge-vuex.git"
+  },
+  "author": "dartchuk sergey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergeymanson/nuxt-edge-vuex/issues"
+  },
+  "homepage": "https://github.com/sergeymanson/nuxt-edge-vuex#readme",
+  "dependencies": {
+    "nuxt-edge": "^2.0.0-25468832.6578bd7"
+  }
+}
