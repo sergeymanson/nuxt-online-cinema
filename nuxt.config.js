@@ -5,7 +5,13 @@ const head = require('./config/head.js')
 module.exports = {
   router,
   head,
-  loading: { color: '#3B8070' },
+  plugins: [
+    {src: '~/plugins/nuxt-client-init.js', ssr: false},
+  ],
+  transition: 'fade',
+  loading: {
+    color: '#418000'
+  },
   build: {
     plugins: [
       new webpack.LoaderOptionsPlugin({ options: {} }),
