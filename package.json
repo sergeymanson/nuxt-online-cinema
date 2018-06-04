@@ -22,5 +22,8 @@
   "homepage": "https://github.com/sergeymanson/nuxt-edge-vuex#readme",
   "dependencies": {
     "nuxt-edge": "^2.0.0-25468832.6578bd7"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1"
   }
 }
