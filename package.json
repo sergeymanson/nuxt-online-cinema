@@ -8,7 +8,7 @@
     "build": "nuxt build ",
     "start": "nuxt start ",
     "s": "nuxt build && nuxt start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": " "
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,13 @@
     "eslint": "^4.19.1",
     "babel-eslint": "^8.2.1",
     "eslint-friendly-formatter": "^3.0.0",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0"
+    "eslint-plugin-vue": "^4.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
   }
 }
