@@ -7,11 +7,13 @@ module.exports = {
   head,
   plugins: [
     {src: '~/plugins/nuxt-client-init.js', ssr: false},
+    {src: '~/plugins/element.js'},
   ],
   transition: 'fade',
   loading: {
     color: '#418000'
   },
+  modules: [],
   build: {
     plugins: [
       new webpack.LoaderOptionsPlugin({ options: {} }),

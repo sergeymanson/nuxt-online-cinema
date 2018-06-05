@@ -16,7 +16,16 @@ export const getters = {
 }
 
 export const actions = {
+  /**
+  *
+  * APP Server init store
+  */
+  nuxtServerInit,
 
+  /**
+  * APP Client init store
+  */
+  nuxtClientInit,
 }
 
 export const mutations = {
