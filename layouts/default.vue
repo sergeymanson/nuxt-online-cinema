@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <el-container>
     <el-header>222</el-header>
     <el-main>
       <nuxt/>
     </el-main>
     <el-footer>vxcvxcv</el-footer>
-  </div>
+  </el-container>
 </template>
