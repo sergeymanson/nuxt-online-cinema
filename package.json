@@ -14,6 +14,10 @@
     "type": "git",
     "url": "git+https://github.com/sergeymanson/nuxt-edge-vuex.git"
   },
+  "engines": {
+    "node": ">=9.5.0",
+    "npm": ">=5.6.0"
+  },
   "author": "dartchuk sergey",
   "license": "ISC",
   "bugs": {
@@ -21,8 +25,9 @@
   },
   "homepage": "https://github.com/sergeymanson/nuxt-edge-vuex#readme",
   "dependencies": {
-    "element-ui": "^2.4.0",
-    "nuxt-edge": "^2.0.0-25468832.6578bd7"
+    "@nuxtjs/axios": "^5.3.1",
+    "element-ui": "^2.4.1",
+    "nuxt-edge": "^2.0.0-25476008.ba5c979"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
