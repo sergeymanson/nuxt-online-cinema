@@ -6,11 +6,11 @@ const TIMEOUT = 10000;
 
 
 const axios = baseAxios.create({
-  baseURL: BASE_URL,
-  timeout: TIMEOUT,
-  headers: {
-    'Content-Type': 'application/json'
-  }
+    baseURL: BASE_URL,
+    timeout: TIMEOUT,
+    headers: {
+        'Content-Type': 'application/json'
+    }
 });
 
 export default axios;

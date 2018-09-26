@@ -1,23 +1,28 @@
 <template>
-  <main>
-    <el-row type="flex" class="row-bg" justify="space-around">
-      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-      <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
-      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-    </el-row>
-    </main>
+    <div class="container">
+        <br/>
+        <list :items="films" :isMovies="true"/>
+        <list :items="serials" :isMovies="false"/>
+    </div>
 </template>
 
 <script>
-export default {
-  name: 'index-page',
-  layout: 'default',
-  components: { },
-  data () {
-    return {
-      visible: false
-    }
-  }
+    import list from '~/components/list'
 
-}
+    export default {
+        name: 'home-page',
+        layout: 'default',
+        components: {
+            list
+        },
+        async asyncData ({$axios}) {
+            const {data: films} = await $axios.get('http://localhost:3000/api/films');
+            const {data: serials} = await $axios.get('http://localhost:3000/api/serials');
+            const response = {
+                films: films.data,
+                serials: serials.data,
+            };
+            return response;
+        }
+    }
 </script>

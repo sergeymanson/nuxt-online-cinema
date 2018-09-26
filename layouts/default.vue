@@ -1,9 +1,28 @@
 <template>
-  <el-container>
-    <el-header>222</el-header>
-    <el-main>
+  <section>
+    <header-component/>
+    <main>
       <nuxt/>
-    </el-main>
-    <el-footer>vxcvxcv</el-footer>
-  </el-container>
+    </main>
+    <footer-component/>
+
+    <modal-wrapper/>
+  </section>
 </template>
+
+
+<script>
+  import headerComponent from '~/components/header';
+  import footerComponent from '~/components/footer';
+  import modalWrapper from '~/components/modal-wrapper';
+  export default {
+    components: {
+        headerComponent,
+        footerComponent,
+        modalWrapper
+    }
+  }
+</script>
+<style>
+  /*@import "../../assets/style/app.scss";*/
+</style>
