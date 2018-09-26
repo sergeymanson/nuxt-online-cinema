@@ -13,9 +13,6 @@
 </template>
 
 <script>
-    import {moviesEntity} from '~/entities/movies/moviesEntity.js';
-    import {serialsEntity} from '~/entities/serials/serialsEntity.js';
-
     import card from '~/components/card'
     export default {
         name: 'list',
@@ -27,18 +24,12 @@
                 type: Array,
                 required: true
             },
-            isMovies: {
-                type: Boolean,
+            model: {
                 required: true
             }
         },
         created () {
-            if (this.isMovies) {
-                this.entities = moviesEntity.mutateCollection(this.items);
-            } else {
-                this.entities = serialsEntity.mutateCollection(this.items);
-            }
-
+            this.entities = this.model.mutateCollection(this.items);
         },
         data () {
             return {

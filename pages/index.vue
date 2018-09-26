@@ -1,8 +1,8 @@
 <template>
     <div class="container">
         <br/>
-        <list :items="films" :isMovies="true"/>
-        <list :items="serials" :isMovies="false"/>
+        <list :items="films" :model="$store.getters['getMovieEntities']"/>
+        <list :items="serials"  :model="$store.getters['getSerialEntities']"/>
     </div>
 </template>
 

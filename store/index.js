@@ -20,7 +20,13 @@ export const getters = {
         return moviesEntity.mutateCollection(state.movies);
     },
     getSerials (state) {
-        return serialEntity.mutateCollection(state.serials);
+        return serialsEntity.mutateCollection(state.serials);
+    },
+    getMovieEntities () {
+        return moviesEntity;
+    },
+    getSerialEntities () {
+        return serialsEntity;
     }
 };
 
