@@ -1,6 +1,6 @@
 # nuxt-edge-vuex
 
-> my first nuxt2  project
+> тестовый проект
 
 ## Build Setup
 
