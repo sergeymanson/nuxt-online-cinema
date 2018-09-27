@@ -6,7 +6,7 @@ export class moviesEntity {
         this.name = data.name;
         this.type = data.sub_type;
         this.year = data.year;
-        this.url = data.url;
+        this.iframe = data.url;
     }
 
     static mutateCollection (data) {
@@ -39,5 +39,9 @@ export class moviesEntity {
 
     getUrl () {
         return '/movies/'+this.getId();
+    }
+
+    getIframe () {
+        return this.iframe;
     }
 }

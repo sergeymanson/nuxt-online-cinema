@@ -23,6 +23,3 @@
     }
   }
 </script>
-<style>
-  /*@import "../../assets/style/app.scss";*/
-</style>

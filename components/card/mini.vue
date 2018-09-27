@@ -11,7 +11,7 @@
 
 <script>
     export default {
-        name: 'card',
+        name: 'card-mini',
         props: {
             item: {
                 type: Object,
