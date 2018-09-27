@@ -1,4 +1,4 @@
-# nuxt-edge-vuex
+# nuxt2-and-vuex
 
 > тестовый проект
 
