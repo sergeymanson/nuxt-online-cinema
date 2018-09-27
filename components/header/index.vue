@@ -2,9 +2,14 @@
     <header role="banner">
         <div class="container flex">
             <div class="left inline-flex">
-                <a href="">
-                    <img id="logo" width="94" height="27" alt="Hd2be" src=""/>
-                </a>
+                <link-custom link="/" id="logo">
+                    <image-custom
+                            width="94"
+                            height="27"
+                            :src="logoSrc"
+                            alt=""
+                    />
+                </link-custom>
             </div>
 
         </div>
@@ -12,7 +17,13 @@
 </template>
 
 <script>
+    import logo from '~/assets/themes/hd2be/images/logo.png'
     export default {
-        name: 'header-component'
+        name: 'header-component',
+        data () {
+            return {
+                logoSrc: logo
+            }
+        }
     }
 </script>

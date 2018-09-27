@@ -2,7 +2,7 @@
     <div class="container"><br>
         <list
             :items="data"
-            :model="$store.getters['getSerialEntities']"
+            :model="$store.getters['getMovieEntities']"
             :title="$t('global.serials')">
             <div slot="footer">pagination</div>
         </list>
@@ -12,13 +12,13 @@
 <script>
     import list from '~/components/list'
     export default {
-        name: 'serials',
+        name: 'movies',
         layout: 'default',
         components: {
             list
         },
         async asyncData ({$axios,  query}) {
-            const {data: serials} = await $axios.get('/serials', {params: query});
+            const {data: serials} = await $axios.get('/api/films', {params: query});
             const response = {
                 data: serials.data,
             };

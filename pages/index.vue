@@ -1,8 +1,20 @@
 <template>
     <div class="container">
         <br/>
-        <list :items="films" :model="$store.getters['getMovieEntities']"/>
-        <list :items="serials"  :model="$store.getters['getSerialEntities']"/>
+        <list
+                :items="films"
+                :model="$store.getters['getMovieEntities']"
+                :btnTitle="$t('global.go-to')"
+                btnLink="/movies"
+                :title="$t('global.movies')"
+        />
+        <list
+                :items="serials"
+                :model="$store.getters['getSerialEntities']"
+                :btnTitle="$t('global.go-to')"
+                btnLink="/serials"
+                :title="$t('global.serials')"
+        />
     </div>
 </template>
 
@@ -16,13 +28,12 @@
             list
         },
         async asyncData ({$axios}) {
-            const {data: films} = await $axios.get('http://localhost:3000/api/films');
-            const {data: serials} = await $axios.get('http://localhost:3000/api/serials');
-            const response = {
+            const {data: films} = await $axios.get('/films');
+            const {data: serials} = await $axios.get('/serials');
+            return {
                 films: films.data,
                 serials: serials.data,
             };
-            return response;
         }
     }
 </script>

@@ -1,19 +1,27 @@
 <template>
     <div class="panel">
         <div class="panel-heading flex">
-            <h2>Фильмы</h2>
-            <a href="/movies" class="btn btn-warning pull-right">Перейти</a>
+            <h2 v-html="title"></h2>
+            <link-custom
+                    class="btn btn-warning pull-right"
+                    v-if="btnLink && btnTitle"
+                    :link="btnLink"
+                    :title="btnTitle"
+                >
+                <span v-text="title"></span>
+            </link-custom>
         </div>
         <div class="panel-body">
             <div class="row">
-                <card v-for="item in entities" :key="item.getId()" :item="item"/>
+                <card v-for="(item, index) in entities" :key="index" :item="item"/>
             </div>
+            <slot name="footer"/>
         </div>
     </div>
 </template>
 
 <script>
-    import card from '~/components/card'
+    import card from '~/components/card/mini'
     export default {
         name: 'list',
         components: {
@@ -26,6 +34,18 @@
             },
             model: {
                 required: true
+            },
+            btnLink: {
+                type: String,
+                default: ''
+            },
+            btnTitle: {
+                type: String,
+                default: ''
+            },
+            title: {
+                type: String,
+                default: ''
             }
         },
         created () {

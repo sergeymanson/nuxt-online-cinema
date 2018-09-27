@@ -120,96 +120,11 @@ header{
     height: 50px;
     background-color: $color_panel;
     box-shadow: 1px 1px 0px 0px #d3e0e9;
+    >div{
+        min-height: 50px;
+    }
     #logo{
-        height: 27px;
-        margin-bottom: -5px;
-    }
-    .search {
-        width: 300px;
-        position: relative;
-        input{width: 100%}
-        ul.search-res{
-            position: absolute;
-            width: 100%;
-            top: 28px;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            background: #f5f8fa;
-            max-height: 0;
-            box-shadow: 0 1px 1px rgba(0,0,0,.05);
-            overflow: auto;
-            transition:0.5s;
-            a{
-                display: block;
-                padding: 5px;
-                border-bottom: 1px solid #d3e0e9;
-                background: #f5f8fa;
-                transition:0.3s;
-            }
-            a:hover{
-                background: #eceeef;
-            }
-            h5{
-                color: $color_panel;
-            }
-            h6{
-                color: rgba(48, 58, 74, 0.45);
-
-            }
-            .img-block{
-                width: 65px;
-                height: 65px;
-                text-align: center;
-            }
-        }
-        #search:focus + ul.search-res, ul.search-res:hover{
-            max-height: 350px;
-        }
-    }
-    
-    li#toggle {
-        position: relative;
-        a{color:#fff;}
-        ul.dropdown-menu {
-            height: 0px;
-            position: absolute;
-            overflow: hidden;
-            background: #303a4a;
-            margin: 0;
-            padding: 0;
-            top: 25px;
-            right: 1px;
-            width: 130px;
-            transition: 0.3s;
-            li{
-                margin: 0;
-                a{
-                    display: block;
-                    padding: 3px 10px;
-                    border-bottom: 1px solid rgba(211, 224, 233, 0.33);
-                    color: #fff;
-                    text-align: right;
-                    &:hover,
-                    &:focus {
-                            background: rgb(63, 74, 93);
-                    }
-                }
-            }
-        }
-    }
-    li#toggle.open{
-        ul.dropdown-menu{
-            height: 57px;
-            
-        }
-    }
-    .right{
-        list-style: none;
-        padding: 0;
-        li{
-            margin-left: 10px; 
-        }
+        display: flex;
     }
 }
 main {
