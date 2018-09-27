@@ -30,11 +30,10 @@
         async asyncData ({$axios}) {
             const {data: films} = await $axios.get('/films');
             const {data: serials} = await $axios.get('/serials');
-            const response = {
+            return {
                 films: films.data,
                 serials: serials.data,
             };
-            return response;
         }
     }
 </script>
