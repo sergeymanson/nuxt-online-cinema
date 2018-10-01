@@ -1,5 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea/
 .git/
+.env
 node_modules/
 .nuxt/
